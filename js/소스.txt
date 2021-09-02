@@ -1,0 +1,17 @@
+<script type="text/javascript">
+$(function(){ //배경을 어둡게하는 div, 이미지 띄우는 div태그 추가
+	$("body").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+
+	$("a.modal").click(function(){
+		$("#glayLayer").show(); //어두운 바탕을 보여준다.
+		$("#overLayer").show().html("<img src='"+$(this).attr("href")+"' />");
+								//큰 이미지를 보여준다.
+								return false;
+	});
+	//바탕 클릭시 어두운 배경, 큰 이미지 안보임
+	$("#glayLayer,#overLayer").click(function(){
+		$("#glayLayer").hide();
+		$("#overLayer").hide();
+	});
+});//jquery 끝 부분
+</script>

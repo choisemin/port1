@@ -59,6 +59,11 @@ html {
     transform: translate(-50%, -50%);
 }
 /*s1 profile*/
+.s1 {
+    color: blue;
+    background: silver;
+    background-size: auto;
+}
 .s1 {padding-top: 70px;}
 .s1>h2 {
     width: 100%; height: 100px; text-align: center;
@@ -133,6 +138,11 @@ html {
 }
 
 /* S2 PORTFOLIO영상 부분이 올라가는 페이지 */
+.s2 {
+    color: blue;
+    background: silver;
+    background-size: auto;
+}
 .section_content {
     position: relative;
     width: 100%; height: 100vh;
@@ -295,7 +305,7 @@ html {
         line-height: 1.5;
         float: left;
 /******* this ******/
-        _padding-top: 20px;
+        padding-top: 20px;
         padding-left: 10px;
     }
     .edu_txt>div {
